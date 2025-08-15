@@ -159,6 +159,27 @@
 
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+<script>
+  // === OGAds lockers ===
+  const LOCKER_URLS = {
+    roblox: 'https://unlockcontent.net/cl/i/4oqq2x',   // ← colle ici l’URL de ton locker Roblox
+    fortnite: 'https://unlockcontent.net/cl/i/m52252'// ← colle ici l’URL de ton locker Fortnite
+  };
+
+  // Ouvre le locker dans un nouvel onglet (meilleure compat mobile + anti popup-blockers)
+  const openLocker = (url, game) => {
+    const u = url + (url.includes('?') ? '&' : '?') + `src=homeFR&game=${game}`;
+    window.open(u, '_blank', 'noopener');
+  };
+
+  document.getElementById('cta-roblox')?.addEventListener('click', e => {
+    e.preventDefault(); openLocker(LOCKER_URLS.roblox, 'roblox');
+  });
+
+  document.getElementById('cta-fn')?.addEventListener('click', e => {
+    e.preventDefault(); openLocker(LOCKER_URLS.fortnite, 'fortnite');
+  });
+</script>
 
   <!-- 📈 Analytics (optionnel) : colle ton script Plausible/GA ici -->
 </body>
