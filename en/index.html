@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RewardHub — Guides & Rewards (Roblox + Fortnite)</title>
+  <meta name="description" content="RewardHub: official codes, events and partner rewards for Roblox, Fortnite & more. Free access via quick verification." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand:#4f46e5; --brand2:#06b6d4; }
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    .gradient{background: linear-gradient(135deg, var(--brand), var(--brand2));}
+    .glass{backdrop-filter: blur(10px); background: rgba(255,255,255,.08);}
+  </style>
+  <meta property="og:title" content="RewardHub — Guides & Rewards" />
+  <meta property="og:description" content="Access Roblox & Fortnite guides (events, drops, codes) after a quick verification. 100% legal." />
+  <meta property="og:type" content="website" />
+</head>
+<body class="bg-slate-900 text-slate-100">
+  <header class="gradient">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center font-extrabold">RH</div>
+        <h1 class="text-2xl font-extrabold tracking-tight">RewardHub</h1>
+      </div>
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-semibold">
+        <a href="#roblox" class="hover:opacity-80">Roblox</a>
+        <a href="#fortnite" class="hover:opacity-80">Fortnite</a>
+        <a href="#faq" class="hover:opacity-80">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative">
+    <div class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">100% legal <span class="text-cyan-300">guides & codes</span> for rewards in <span class="whitespace-nowrap">Roblox</span> & <span class="whitespace-nowrap">Fortnite</span></h2>
+        <p class="mt-4 text-slate-300">Access curated checklists of official events, drops, partner programs and active codes. Unlock the guide via a short verification (content locker) to keep RewardHub free.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#roblox" class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-semibold">Open Roblox guide</a>
+          <a href="#fortnite" class="px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 font-semibold">Open Fortnite guide</a>
+        </div>
+        <div class="mt-5 text-xs text-slate-400">No fake skins/currency promises. Only official methods: codes, events, partners, drops, legal sweepstakes.</div>
+      </div>
+      <div class="glass rounded-2xl p-6 border border-white/10">
+        <div class="text-sm text-slate-300">Users online</div>
+        <div class="mt-2 text-5xl font-extrabold" id="liveCount">324</div>
+        <div class="mt-6 text-sm text-slate-300">Next codes update in</div>
+        <div class="mt-2 text-3xl font-extrabold" id="countdown">00:29:58</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-2 gap-8">
+    <article id="roblox" class="rounded-2xl border border-white/10 glass p-6">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">🧩</div>
+        <h3 class="text-2xl font-bold">Roblox Guide — Rewards & Active Codes</h3>
+      </div>
+      <ul class="mt-4 list-disc list-inside text-slate-300 space-y-1">
+        <li>Active codes / official promotions</li>
+        <li>Partner events & mini-games (badges → items)</li>
+        <li>Legal partner offers (trials, apps, games)</li>
+      </ul>
+      <button onclick="openLocker('roblox')" id="cta-roblox" class="mt-6 w-full px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 font-semibold">Unlock Roblox guide</button>
+      <p class="mt-3 text-xs text-slate-400">Access uses a short anti‑bot verification (content locker).</p>
+    </article>
+
+    <article id="fortnite" class="rounded-2xl border border-white/10 glass p-6">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center">🎮</div>
+        <h3 class="text-2xl font-bold">Fortnite Guide — Skins, Quests & Official Drops</h3>
+      </div>
+      <ul class="mt-4 list-disc list-inside text-slate-300 space-y-1">
+        <li>Creator codes & event rewards</li>
+        <li>Twitch drops & Epic Games partners</li>
+        <li>Legal sweepstakes & partner offers</li>
+      </ul>
+      <button onclick="openLocker('fortnite')" id="cta-fn" class="mt-6 w-full px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-semibold">Unlock Fortnite guide</button>
+      <p class="mt-3 text-xs text-slate-400">No unofficial V‑Bucks/skins promises. Only approved methods.</p>
+    </article>
+  </section>
+
+  <section id="faq" class="max-w-4xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-bold">FAQ</h3>
+    <div class="mt-4 space-y-4">
+      <details class="glass rounded-xl p-4 border border-white/10">
+        <summary class="font-semibold">Why verification (content locker)?</summary>
+        <p class="mt-2 text-slate-300">To keep RewardHub free and filter bots. After the quick partner step, you get the full guide (codes, official links, tutorials).</p>
+      </details>
+      <details class="glass rounded-xl p-4 border border-white/10">
+        <summary class="font-semibold">Do you provide “free” currency or skins?</summary>
+        <p class="mt-2 text-slate-300">No. We only list <strong>legal opportunities</strong> (events, drops, codes, sweepstakes) by publishers or partners.</p>
+      </details>
+      <details class="glass rounded-xl p-4 border border-white/10">
+        <summary class="font-semibold">Is this allowed by Roblox/Epic?</summary>
+        <p class="mt-2 text-slate-300">We do not sell or offer proprietary content. We link to official programs and authorized partner offers.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>© <span id="y"></span> RewardHub. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">Legal</a>
+        <a href="#" class="hover:underline">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // EN lockers — replace with your EN/US OGAds lockers.
+    const EN_LOCKERS = {
+      roblox: 'https://unlockcontent.net/cl/i/EN_ROBLOX_REPLACE',   // TODO: replace
+      fortnite: 'https://unlockcontent.net/cl/i/EN_FORTNITE_REPLACE' // TODO: replace
+    };
+    // FR fallback (uses your FR lockers if EN not set)
+    const FR_FALLBACK = {
+      roblox: 'https://unlockcontent.net/cl/i/4oqq2x',
+      fortnite: 'https://unlockcontent.net/cl/i/m52252'
+    };
+    function openLocker(game){
+      const base = EN_LOCKERS[game] && !EN_LOCKERS[game].includes('REPLACE') ? EN_LOCKERS[game] : FR_FALLBACK[game];
+      const u = base + (base.includes('?')?'&':'?') + `src=homeEN&game=${game}`;
+      window.open(u,'_blank','noopener');
+    }
+    const liveCount = document.getElementById('liveCount');
+    setInterval(()=>{ liveCount.textContent = (250 + Math.floor(Math.random()*150)).toString(); }, 3000);
+    const cd = document.getElementById('countdown'); let sec = 30*60;
+    setInterval(()=>{ sec = sec>0 ? sec-1 : 30*60; const m = String(Math.floor(sec/60)).padStart(2,'0'); const s = String(sec%60).padStart(2,'0'); cd.textContent = `00:${m}:${s}`; }, 1000);
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
